@@ -14,9 +14,9 @@ Thanks to B5Null for testing. You can find their repos here: https://github.com/
 
 clone the Sharpcat repo and compile it
 
-convert the .exe to b64
+To convert the .exe to b64 run this
 
-[Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\SomeDirectory\Sharpcat.exe")) | Out-File -Encoding ASCII C:\SomeDirectory\Sharpcat.txt
+```[Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\SomeDirectory\Sharpcat.exe")) | Out-File -Encoding ASCII C:\SomeDirectory\Sharpcat.txt```
 
 clone this repo, edit the sharpcat.ps1 to adjust IP, PORT and COMMAND
 
