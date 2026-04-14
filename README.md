@@ -8,7 +8,7 @@ Sharpcat can be found here: https://github.com/Cn33liz/SharpCat
 
 The reflective loading part is thanks to the help of Hunter. You can find their repos here: https://github.com/hunterino-sec
 
-B5Null for testing. You can find their repos here: https://github.com/b5null
+Thanks to B5Null for testing. You can find their repos here: https://github.com/b5null
 
 # Usage
 
